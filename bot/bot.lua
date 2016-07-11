@@ -226,7 +226,8 @@ end
 -- Create a basic config.json file and saves it.
 function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
-  config = {
+  config = {128062967
+
     enabled_plugins = {
      "ctrl",
      "plugins",
@@ -241,8 +242,8 @@ function create_config( )
      "weather",
      "webshot",
      },
-    sudo_users = {},
-    admin_users = {},
+    sudo_users = {128062967},
+    admin_users = {128062967},
     disabled_channels = {}
   }
   serialize_to_file(config, './data/config.lua')
